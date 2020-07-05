@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slider_viewPager"
+        android:layout_margin="2dp"
+        android:layout_above="@id/slider_dot">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slider_dot"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/slide_next"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide_previous"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:textSize="15sp"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide_next"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="Next"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide_finish"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

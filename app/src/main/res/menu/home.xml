@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="About" />
+
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="100"
+        android:title="Contact Us"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Help &amp; Support"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/action_join"
+        android:orderInCategory="100"
+        android:title="Join us"
+        app:showAsAction="never" />
+</menu>

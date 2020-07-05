@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_genHome"
+            android:layout_margin="3dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/homeAdProImage"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/profilepic"
+                app:civ_border_width="1dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/homeEdit"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeAdname"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/homeAdProImage"
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@id/homeEdit"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeAdRole"
+                android:layout_below="@id/homeAdname"
+                android:layout_toEndOf="@id/homeAdProImage"
+                android:layout_marginStart="7dp"
+                android:layout_toStartOf="@id/homeEdit"
+                android:layout_marginTop="1dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_content"
+                android:layout_below="@id/rel_genHome"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeAdDescp"
+                    android:padding="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:textAlignment="textStart"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progress_homepost"
+                    android:layout_below="@id/homeAdDescp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    android:layout_gravity="center"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeAdPostimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/homeAdDescp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_content"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeAdTimepost"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="3dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homeAdDate"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="3dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/homeComment"
+                    android:src="@drawable/ic_message"
+                    android:layout_toStartOf="@id/homeShare"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/homeAdDate"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/homeShare"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_share"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
