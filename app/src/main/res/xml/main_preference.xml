@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <PreferenceCategory
+        android:title="Theme">
+        <SwitchPreferenceCompat
+            android:key="switch_preference"
+            android:title="Dark Theme"/>
+    </PreferenceCategory>
+    <SwitchPreferenceCompat
+        android:key="notifications"
+        android:title="Enable message notifications"/>
+
+    <Preference
+        android:key="feedback"
+        android:title="Send feedback"
+        android:summary="Report technical issues or suggest new features"/>
+    <PreferenceCategory
+        android:key="expandable"
+        android:title="Display"
+        app:initialExpandedChildrenCount="1">
+        <SeekBarPreference
+            android:key="seekbar_preference"
+            android:title="Brightness Level"
+            android:summary="20%"/>
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
+    <FrameLayout
+        android:id="@+id/content_preference"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-57dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
